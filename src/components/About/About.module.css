@@ -1,0 +1,112 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black url(../../assests/image/stars/stars.png) repeat top center;
+  background-attachment: fixed;
+}
+
+.container {
+  margin-top: 30px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  position: relative;
+  top:60px;
+}
+
+.heading {
+  border: 2px solid #fff;
+  width: 30%;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+}
+
+.SlietImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SlietImg img {
+  width: 70%;
+}
+
+.about_sliet {
+  margin-bottom: 70px;
+}
+
+.about_techfest {
+  margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .heading {
+    width: 50%;
+    font-size: 250%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 180%;
+  }
+
+  .container {
+    width: 95%;
+    margin-top: 70px;
+  }
+
+  .about {
+    height: 200vh;
+    justify-content: flex-start;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    width: 50%;
+    font-size: 150%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .container {
+    width: 95%;
+    margin-top: 70px;
+  }
+
+  .about {
+    height: 195vh;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .heading {
+    width: 60%;
+    font-size: 150%;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 100%;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+
