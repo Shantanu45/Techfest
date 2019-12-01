@@ -30,16 +30,16 @@ export default class Home extends Component {
     render() {
         let size;
         const { width } = this.state;
-        if(width < 350){
+        if (width < 350) {
             size = "3em";
         }
-        else if (width < 500){
+        else if (width < 500) {
             size = "2rem";
         }
-        else if (width < 800){
+        else if (width < 800) {
             size = "3rem";
         }
-        else{
+        else {
             size = "4rem";
         }
 
@@ -48,6 +48,7 @@ export default class Home extends Component {
 
 
             <div className={Classes.home}>
+                <div className={Classes.twinkling}></div>
                 <div className={Classes.stars}>
                     <div className={Classes.main}>
                         <div className={Classes.star_anim_1}></div>
@@ -78,7 +79,7 @@ export default class Home extends Component {
                         </div>
 
 
-                        <div className={[Classes.mars]}>
+                        <div className={Classes.mars}>
                             <div></div>
                         </div>
                     </div>
@@ -96,10 +97,35 @@ export default class Home extends Component {
                             that’ll fulfil your wishes and open up the gates to a developing realm. Come aboard as we set sail to the
                             future
                             with techFEST’20.
-                    </article>
+                        </article>
                     </div>
+                    <div className={Classes.container}>
+                        <div className={Classes.card}>
+                            <h3 className={Classes.title}>Card 1</h3>
+                            <div className={Classes.bar}>
+                                <div className={Classes.emptybar}></div>
+                                <div className={Classes.filledbar}></div>
+                            </div>
+                        </div>
+                        <div className={Classes.card}>
+                            <h3 className={Classes.title}>Card 2</h3>
+                            <div className={Classes.bar}>
+                                <div className={Classes.emptybar}></div>
+                                <div className={Classes.filledbar}></div>
+                            </div>
+                        </div>
+                        <div className={Classes.card}>
+                            <h3 className={Classes.title}>Card 3</h3>
+                            <div className={Classes.bar}>
+                                <div className={Classes.emptybar}></div>
+                                <div className={Classes.filledbar}></div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div className={Classes.twinkling}></div>
+
+                
             </div>
         )
     }

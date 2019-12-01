@@ -5,6 +5,7 @@
   align-items: center;
   background: black url(../../assests/image/stars/stars.png) repeat top center;
   background-attachment: fixed;
+  background-size: contain;
 }
 
 .container {
@@ -13,14 +14,15 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 40px;
   position: relative;
-  top:60px;
+  top:100px;
 }
 
 .heading {
-  border: 2px solid #fff;
+  border-bottom: 2px solid rgba(215, 56, 255, 0.459);
   width: 30%;
   padding: 10px 20px;
   margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.808);
 }
 
 .SlietImg {
@@ -35,10 +37,21 @@
 
 .about_sliet {
   margin-bottom: 70px;
+  background-color: rgba(70, 0, 88, 0.726);
+  padding: 40px 20px;
 }
 
 .about_techfest {
   margin-bottom: 70px;
+  background-color: rgba(100, 100, 100, 0.137);
+  padding: 40px 20px;
+}
+
+.text{
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+  font-size: 1em;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -52,7 +65,7 @@
   .text {
     text-align: center;
     margin-top: 30px;
-    font-size: 180%;
+    font-size: 100%;
   }
 
   .container {
@@ -93,7 +106,7 @@
 
 @media only screen and (max-width: 595px) {
   .heading {
-    width: 60%;
+    width: 100%;
     font-size: 150%;
     padding: 5px;
     text-align: center;
@@ -106,7 +119,17 @@
   }
 
   .container {
-    width: 95%;
+    width: 100%;
+    padding: 0px;
   }
+
+  .text{
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+    font-size: 1em;
+  }
+
+
 }
 

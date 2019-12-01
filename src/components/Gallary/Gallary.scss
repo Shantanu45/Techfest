@@ -1,6 +1,7 @@
 .GalaryContainer{
   
   background: black url(../../assests/image/stars/stars.png) repeat top center;
+  background-size: contain;
 }
 
 .Galary{
@@ -13,7 +14,7 @@
 
 
 .section {
-  background-color: rgba(49, 48, 59, .4);
+  background-color: rgba(46, 0, 58, 0.705);
     display: none;
     padding: 3rem;
     

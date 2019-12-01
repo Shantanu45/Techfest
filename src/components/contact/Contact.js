@@ -10,35 +10,42 @@ export default class Contact extends Component {
             <div className="Contact">
                 <div className="grid-container">
                     <div className="grid-item one">
-                        <h1>REACH US AT</h1>
-                        <ul>
-                            <li><i className="fa fa-road"></i> Sant longowal institute engineering and technology, Longowal, Sangrur, Punjab, PIN:148106
-                </li>
-                            <li><i className="fa fa-phone"></i> 8264982264</li>
-                            <li><i className="fa fa-phone"></i> 6280630823</li>
-                            <li><i className="fa fa-envelope"></i> thepvrock786@gmail.com</li>
-                        </ul>
+                        <div className="inside-container">
+                            <h1 className="heading">REACH US AT</h1>
+                            <ul>
+                                <li><i className="fa fa-road"></i> Sant longowal institute engineering and technology, Longowal, Sangrur, Punjab, PIN:148106</li>
+                                <li><i className="fa fa-phone"></i> 8264982264</li>
+                                <li><i className="fa fa-phone"></i> 6280630823</li>
+                                <li><i className="fa fa-envelope"></i> thepvrock786@gmail.com</li>
+                            </ul>
+                        </div>
                     </div>
                     <div className="grid-item two">
-                        <iframe className="map" title="mapy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30676012.524216026!2d64.44561934566444!3d20.191107321453266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910f8bd26a61ba3%3A0xa45e3a23dfc09f9b!2sSant%20Longowal%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1573539640773!5m2!1sen!2sin"
-                            frameborder="0" allowfullscreen="">
-                        </iframe>
+                        <div className="inside-container">
+                            <iframe className="map" title="mapy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30676012.524216026!2d64.44561934566444!3d20.191107321453266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910f8bd26a61ba3%3A0xa45e3a23dfc09f9b!2sSant%20Longowal%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1573539640773!5m2!1sen!2sin"
+                                frameborder="0" allowfullscreen="">
+                            </iframe>
+                        </div>
                     </div>
                     <div className="grid-item three">
-                        <h1>Contact Us</h1>
-                        <div className="inner-section">
-                            <input type="text" className="name" placeholder="Your Name" />
-                            <input type="email" className="email" placeholder="Your Email" />
-                            <input type="number" className="number" placeholder="Your Number" />
-                            <textarea placeholder="Message" className="message"></textarea>
-                            <button className="button">Send Message</button>
+                        <div className="inside-container">
+                            <h1 className="heading">Contact Us</h1>
+                            <div className="inner-section">
+                                <input type="text" className="in name" placeholder="Your Name" />
+                                <input type="email" className="in email" placeholder="Your Email" />
+                                <input type="number" className="in number" placeholder="Your Number" />
+                                <textarea placeholder="Message" className="in message"></textarea>
+                                <button className="button">Send Message</button>
+                            </div>
                         </div>
                     </div>
                     <div className="grid-item four">
-                        <ul>
-                            <button>College Ambassador</button>
-                            <button>Team Member</button>
-                        </ul>
+                        <div className="inside-container">
+                            <ul>
+                                {/* <button>College Ambassador</button> */}
+                                <button>Team Members</button>
+                            </ul>
+                        </div>
                     </div>
 
                     {/* <footer className="site-footer">

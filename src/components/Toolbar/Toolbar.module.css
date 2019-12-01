@@ -121,9 +121,17 @@ a:hover {
     }
 }
 
-@media(max-width:360px) {
+@media(max-width:400px) {
     .toolbar__toggle_button {
         position: absolute;
         right: 12px;
+    }
+
+    .toolbar__logo {
+        margin-left: -15px;
+    }
+
+    .toolbar__logo img {
+        width: 70px;
     }
 }

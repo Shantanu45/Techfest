@@ -46,7 +46,7 @@ export default function About() {
 
         <div className={Classes.about_techfest}>
           <h1 className={Classes.heading}>
-            About Techfest'20
+            About techFEST'20
         </h1>
           <div>
             <p className={Classes.text}>

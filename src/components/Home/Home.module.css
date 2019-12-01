@@ -5,17 +5,39 @@ body {
   color: white;
   cursor: url('../../assests/Tailless.cur'), default;
   
+
 }
 
-body::-webkit-scrollbar { width: 0 !important }
+body::-webkit-scrollbar {
+  width: 0 !important
+}
+
 /* stars ////////////*/
 
 .stars {
   background: black url(../../assests/image/stars/stars.png) repeat top center;
+  
   background-size: contain;
   background-repeat: repeat;
   z-index: 0;
 }
+
+/* .main{
+  background: rgba(0, 0, 0, 0.178) url(../../assests/image/265.png) no-repeat;
+  background-position: 0px 250px;
+  background-size: contain;
+  position: relative;
+  z-index: 2
+} */
+
+/* .main {
+  background: black url(../../assests/image/26.jpg) repeat top center;
+  
+  background-size: contain;
+  background-repeat: repeat;
+  z-index: 0;
+} */
+
 
 .twinkling {
   position: absolute;
@@ -80,14 +102,14 @@ body::-webkit-scrollbar { width: 0 !important }
   width: 850px;
   height: 800px;
   position: relative;
-  top: 10%;
+  top: -50px;
   left: 0;
   right: 0;
   z-index: 2;
   margin: auto;
   overflow: hidden;
   border-radius: 50%;
-  box-shadow: 0px -12px 131px -10px rgb(161, 53, 147);
+  box-shadow: 0px -12px 131px -10px rgb(171, 47, 187);
 }
 
 .mars:after {
@@ -105,15 +127,15 @@ body::-webkit-scrollbar { width: 0 !important }
   width: 200%;
   height: 100%;
   animation: spin 40s linear alternate infinite;
-  background: url("../../assests/image/mars/5672_marsmap2kA.jpg");
+  background: url("../../assests/image/mars/5672_marsmap2kA - Copy1.jpg");
   background-size: cover;
 }
 
-@keyframes spin {
+/* @keyframes spin {
   to {
     transform: translateX(-50%);
   }
-}
+} */
 
 
 @font-face {
@@ -411,6 +433,7 @@ a:hover {
   animation-duration: 1s;
   animation-timing-function: ease-out;
   position: relative;
+  top: -50px;
   z-index: 2;
   color: rgb(255, 255, 255);
 }
@@ -515,6 +538,9 @@ article {
   .mars {
     width: 300px;
     height: 300px;
+
+    border-radius: 50%;
+
   }
 
   .about {
@@ -552,6 +578,7 @@ article {
   .mars {
     width: 200px;
     height: 200px;
+
   }
 
   #satellite {
@@ -563,4 +590,118 @@ article {
   #main {
     margin-bottom: 100px;
   }
+}
+
+
+
+/* CARD/////////////////////////////*/
+
+.container {
+
+  display: grid;
+  grid-template-columns: auto;
+}
+
+
+.card {
+  height: 280px;
+  width: 480px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  top: -300px;
+  z-index: 5;
+  margin: 10px auto;
+}
+
+
+/* .card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+} */
+
+/* .card:hover~.card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+} */
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+/* 
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+} */
+
+@media screen and (max-width: 600px){
+  .card {
+    height: 150px;
+    width: 250px;
+    top: -200px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
+  .container {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  
+  
+  .card {
+    height: 280px;
+    width: 380px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+      margin-left: -50px;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 80px;
+    top: -500px;
+    z-index: 5;
+  }
+  
+  .card:not(:first-child) {
+    margin-left: -100px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover~.card {
+    position: relative;
+    left: 20px;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+  
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
+  
 }

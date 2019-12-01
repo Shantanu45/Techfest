@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 24px;
-    width: 30px;
+    width: 35px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -19,4 +19,14 @@
     width: 30px;
     height: 2px;
     background: white;
+  }
+
+  @media(max-width:360px){
+
+    .toggle_button__line {
+      width: 20px;
+      height: 1px;
+      background: white;
+    }
+
   }
